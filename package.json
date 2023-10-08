@@ -1,15 +1,18 @@
 {
   "name": "bakerysummonersourcelambda",
   "version": "1.0.0",
-  "description": "AWS Lambda used to populate a database of players and their summoner IDs given a list of their summoner names",
+  "description": "AWS Lambda used to populate a database of players and their summoner IDs given a list of their summoner names.",
   "main": "build/index.js",
   "scripts": {
+    "start": "node",
+    "build": "tsc",
     "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Qusai Fares <qusaifares@gmail.com> (https://qusaifares.com/)",
   "license": "ISC",
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.124",
     "@types/aws-sdk": "^2.7.0",
     "@types/node": "^20.8.3",
     "@types/pg": "^8.10.3",
